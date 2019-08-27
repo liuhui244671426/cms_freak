@@ -3,7 +3,7 @@
 		{
 			"title": "文章列表",
 			"icon": "icon-text",
-			"href": "page/news/newsList.html",
+			"href": "/?m=admin&c=news&a=newsList",
 			"spread": false
 		},
 		{
@@ -21,13 +21,13 @@
 				{
 					"title": "404页面",
 					"icon": "&#xe61c;",
-					"href": "page/404.html",
+					"href": "/?m=admin&a=notFound",
 					"spread": false
 				},
 				{
 					"title": "登录",
 					"icon": "&#xe609;",
-					"href": "page/login/login.html",
+					"href": "/?m=admin&c=login&a=login",
 					"spread": false,
 					"target": "_blank"
 				}
@@ -38,13 +38,13 @@
 		{
 			"title": "用户中心",
 			"icon": "&#xe612;",
-			"href": "page/user/userList.html",
+			"href": "/?m=admin&c=user&a=userList",
 			"spread": false
 		},
 		{
 			"title": "会员等级",
 			"icon": "icon-vip",
-			"href": "page/user/userGrade.html",
+			"href": "/?m=admin&c=user&a=userGrade",
 			"spread": false
 		}
 	],
@@ -52,22 +52,22 @@
 		{
 			"title": "系统基本参数",
 			"icon": "&#xe631;",
-			"href": "page/systemSetting/basicParameter.html",
+			"href": "/?m=admin&c=system&a=basicParameter",
 			"spread": false
 		},{
 			"title": "系统日志",
 			"icon": "icon-log",
-			"href": "page/systemSetting/logs.html",
+			"href": "/?m=admin&c=system&a=logs",
 			"spread": false
 		},{
 			"title": "友情链接",
 			"icon": "&#xe64c;",
-			"href": "page/systemSetting/linkList.html",
+			"href": "/?m=admin&c=system&a=linkList",
 			"spread": false
 		},{
 			"title": "图标管理",
 			"icon": "&#xe857;",
-			"href": "page/systemSetting/icons.html",
+			"href": "/?m=admin&c=system&a=icons",
 			"spread": false
 		}
 	],

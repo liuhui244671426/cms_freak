@@ -9,7 +9,7 @@ layui.use(['form','layer','laydate','table','laytpl'],function(){
     //新闻列表
     var tableIns = table.render({
         elem: '#newsList',
-        url : '../../json/newsList.json',
+        url : 'public/json/newsList.json',
         cellMinWidth : 95,
         page : true,
         height : "full-125",
@@ -67,7 +67,7 @@ layui.use(['form','layer','laydate','table','laytpl'],function(){
         var index = layui.layer.open({
             title : "添加文章",
             type : 2,
-            content : "newsAdd.html",
+            content : "/?m=admin&c=news&a=newsAdd",
             success : function(layero, index){
                 var body = layui.layer.getChildFrame('body', index);
                 if(edit){
