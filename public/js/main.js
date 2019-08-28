@@ -83,16 +83,16 @@ layui.use(['form','element','layer','jquery'],function(){
         }
         $(".hot_news").html(hotNewsHtml);
         $(".userAll span").text(data.length);
-    })
+    });
 
     //用户数量
     $.get("public/json/userList.json",function(data){
         $(".userAll span").text(data.count);
-    })
+    });
 
     //外部图标
     $.get(iconUrl,function(data){
         $(".outIcons span").text(data.split(".icon-").length-1);
     })
 
-})
+});
