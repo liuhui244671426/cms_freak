@@ -26,7 +26,7 @@ layui.use(['form','layer','jquery'],function(){
 			layer.msg("系统基本参数修改成功！");
         },500);
  		return false;
- 	})
+ 	});
 
 
  	//加载默认数据
@@ -35,7 +35,7 @@ layui.use(['form','layer','jquery'],function(){
  		fillData(data);
  	}else{
  		$.ajax({
-			url : "../../json/systemParameter.json",
+			url : "public/json/systemParameter.json",
 			type : "get",
 			dataType : "json",
 			success : function(data){
@@ -60,4 +60,4 @@ layui.use(['form','layer','jquery'],function(){
 		$(".keywords").val(data.keywords);    //默认关键字
  	}
  	
-})
+});

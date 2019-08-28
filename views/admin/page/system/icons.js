@@ -14,7 +14,7 @@ layui.use(['form','layer','jquery'],function(){
         }
         $(".icons").html(iconHtml);
         $(".iconsLength").text(data.split(".icon-").length-1);
-    })
+    });
 
     $("body").on("click",".icons li",function(){
         var copyText = document.getElementById("copyText");
@@ -23,4 +23,4 @@ layui.use(['form','layer','jquery'],function(){
         document.execCommand("copy");
         layer.msg("复制成功",{anim: 2});
     })
-})
+});

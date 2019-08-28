@@ -9,7 +9,7 @@
 		{
 			"title": "图片管理",
 			"icon": "&#xe634;",
-			"href": "page/img/images.html",
+			"href": "/?m=admin&c=img&a=images",
 			"spread": false
 		},
 		{

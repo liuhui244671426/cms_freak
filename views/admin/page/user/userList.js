@@ -8,7 +8,7 @@ layui.use(['form','layer','table','laytpl'],function(){
     //用户列表
     var tableIns = table.render({
         elem: '#userList',
-        url : '../../json/userList.json',
+        url : 'public/json/userList.json',
         cellMinWidth : 95,
         page : true,
         height : "full-125",
@@ -64,7 +64,7 @@ layui.use(['form','layer','table','laytpl'],function(){
         var index = layui.layer.open({
             title : "添加用户",
             type : 2,
-            content : "userAdd.html",
+            content : "/?m=admin&c=user&a=userAdd",
             success : function(layero, index){
                 var body = layui.layer.getChildFrame('body', index);
                 if(edit){

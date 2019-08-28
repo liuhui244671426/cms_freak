@@ -3,13 +3,13 @@
 	"msg": "",
 	"data": [
 		{
-			"src": "../../images/fly.png"
+			"src": "public/images/fly.png"
 		},{
-			"src": "../../images/git.png"
+			"src": "public/images/git.png"
 		},{
-			"src": "../../images/layui.png"
+			"src": "public/images/layui.png"
 		},{
-			"src": "../../images/mayun.png"
+			"src": "public/images/mayun.png"
 		}
 	]
 }

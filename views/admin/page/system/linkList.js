@@ -9,7 +9,7 @@ layui.use(['form','layer','laydate','table','upload'],function(){
     //友链列表
     var tableIns = table.render({
         elem: '#linkList',
-        url : '../../json/linkList.json',
+        url : 'public/json/linkList.json',
         page : true,
         cellMinWidth : 95,
         height : "full-104",
@@ -58,7 +58,7 @@ layui.use(['form','layer','laydate','table','upload'],function(){
             title : "添加友链",
             type : 2,
             area : ["300px","385px"],
-            content : "page/systemSetting/linksAdd.html",
+            content : "/?m=admin&c=system&a=linksAdd",
             success : function(layero, index){
                 var body = $($(".layui-layer-iframe",parent.document).find("iframe")[0].contentWindow.document.body);
                 if(edit){
@@ -80,7 +80,7 @@ layui.use(['form','layer','laydate','table','upload'],function(){
     }
     $(".addLink_btn").click(function(){
         addLink();
-    })
+    });
 
     //批量删除
     $(".delAll_btn").click(function(){
@@ -102,7 +102,7 @@ layui.use(['form','layer','laydate','table','upload'],function(){
         }else{
             layer.msg("请选择需要删除的文章");
         }
-    })
+    });
 
     //列表操作
     table.on('tool(linkList)', function(obj){
@@ -126,7 +126,7 @@ layui.use(['form','layer','laydate','table','upload'],function(){
     //上传logo
     upload.render({
         elem: '.linkLogo',
-        url: '../../json/linkLogo.json',
+        url: 'public/json/linkLogo.json',
         method : "get",  //此处是为了演示之用，实际使用中请将此删除，默认用post方式提交
         done: function(res, index, upload){
             var num = parseInt(4*Math.random());  //生成0-4的随机数，随机显示一个头像信息
@@ -169,6 +169,6 @@ layui.use(['form','layer','laydate','table','upload'],function(){
             $(".layui-tab-item.layui-show",parent.document).find("iframe")[0].contentWindow.location.reload();
         },500);
         return false;
-    })
+    });
 
-})
+});

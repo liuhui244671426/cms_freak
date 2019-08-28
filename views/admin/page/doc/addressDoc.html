@@ -9,8 +9,8 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
-	<link rel="stylesheet" href="../../css/public.css" media="all" />
+	<link rel="stylesheet" href="public/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="public/css/public.css" media="all" />
 </head>
 <body class="childrenBody">
 	<blockquote class="layui-elem-quote">
@@ -31,7 +31,7 @@
 	<p>上面说过，模块相对页面的存放路径不同，使用时也需要进行不同的配置。如果页面和此模块属于同级关系，则不用进行任何配置，直接引入即可使用。如果它们不属于同级关系，则需要通过查找address.js文件相对xx.js文件的相对路径进行配置，如：address.js文件与a文件夹属于同级，而a文件夹中包含b文件夹，b文件夹中包含xx.js，通过xx.js引入address模块则进行下面的配置</p>
 	<pre class="layui-code" lay-title="JavaScript">
 		layui.config({
-		  base : "../../js/"  <em class="layui-word-aux">//如果a文件夹中直接就是xx.js文件，则为“../js/”</em>
+		  base : "public/js/"  <em class="layui-word-aux">//如果a文件夹中直接就是xx.js文件，则为“../js/”</em>
 		}).extend({
 		  "address" : "address"
 		})
@@ -72,7 +72,7 @@
 		  }]
 		}]
 	</pre>
-	<script type="text/javascript" src="../../layui/layui.js"></script>
+	<script type="text/javascript" src="public/layui/layui.js"></script>
 	<script type="text/javascript">
         layui.use(['code'],function(){
             layui.code({
