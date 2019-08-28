@@ -75,17 +75,17 @@
 		{
 			"title": "三级联动模块",
 			"icon": "icon-mokuai",
-			"href": "page/doc/addressDoc.html",
+			"href": "/?m=admin&c=doc&a=addressDoc",
 			"spread": false
 		},{
 			"title": "bodyTab模块",
 			"icon": "icon-mokuai",
-			"href": "page/doc/bodyTabDoc.html",
+			"href": "/?m=admin&c=doc&a=bodyTabDoc",
 			"spread": false
 		},{
 			"title": "三级菜单",
 			"icon": "icon-mokuai",
-			"href": "page/doc/navDoc.html",
+			"href": "/?m=admin&c=doc&a=navDoc",
 			"spread": false
 		}
 	]

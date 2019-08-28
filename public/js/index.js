@@ -3,7 +3,7 @@ layui.config({
 	base : "/public/js/"
 }).extend({
 	"bodyTab" : "bodyTab"
-})
+});
 layui.use(['bodyTab','form','element','layer','jquery'],function(){
 	var form = layui.form,
 		element = layui.element;
@@ -49,7 +49,7 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 		getData($(this).data("menu"));
 		//渲染顶部窗口
 		tab.tabMove();
-	})
+	});
 
 	//隐藏左侧导航
 	$(".hideMenu").click(function(){
@@ -60,7 +60,7 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 		$(".layui-layout-admin").toggleClass("showMenu");
 		//渲染顶部窗口
 		tab.tabMove();
-	})
+	});
 
 	//通过顶部菜单获取左侧二三级菜单   注：此处只做演示之用，实际开发中通过接口传参的方式获取导航数据
 	getData("contentManagement");
@@ -81,7 +81,7 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 			$('body').removeClass('site-mobile');  //移动端点击菜单关闭菜单层
 		}
 		$(this).parent("li").siblings().removeClass("layui-nav-itemed");
-	})
+	});
 
 	//清除缓存
 	$(".clearCache").click(function(){
@@ -92,7 +92,7 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
             layer.close(index);
             layer.msg("缓存清除成功！");
         },1000);
-    })
+    });
 
 	//刷新后还原打开的窗口
     if(cacheStr == "true") {
@@ -134,7 +134,7 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 		window.sessionStorage.removeItem("menu");
 		window.sessionStorage.removeItem("curmenu");
 	}
-})
+});
 
 //打开新窗口
 function addTab(_this){
@@ -147,10 +147,10 @@ function donation(){
 		area : ['260px', '367px'],
 		tab : [{
 			title : "微信",
-			content : "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img src='images/wechat.jpg'></div>"
+			content : "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img src='public/images/wechat.jpg'></div>"
 		},{
 			title : "支付宝",
-			content : "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img src='images/alipay.jpg'></div>"
+			content : "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img src='public/images/alipay.jpg'></div>"
 		}]
 	})
 }
