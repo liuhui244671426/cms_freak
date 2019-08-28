@@ -44,7 +44,7 @@ layui.use(['form','layer','laydate','table','laytpl'],function(){
                 layer.msg("取消置顶成功！");
             }
         },500);
-    })
+    });
 
     //搜索【此功能需要后台配合，所以暂时没有动态效果演示】
     $(".search_btn").on("click",function(){
