@@ -71,7 +71,7 @@
 			"spread": false
 		}
 	],
-	"seraphApi": [
+	"document": [
 		{
 			"title": "三级联动模块",
 			"icon": "icon-mokuai",
