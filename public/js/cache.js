@@ -56,7 +56,7 @@ layui.use(['form','jquery',"layer"],function() {
     }
     $(".showNotice").on("click",function(){
         showNotice();
-    })
+    });
 
     //锁屏
     function lockPage(){

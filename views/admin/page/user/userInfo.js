@@ -1,10 +1,10 @@
 var form, $,areaData;
 layui.config({
-    base : "../../js/"
+    base : "/public/js/"
 }).extend({
     "address" : "address"
-})
-layui.use(['form','layer','upload','laydate',"address"],function(){
+});
+layui.use(['address', 'form','layer','upload','laydate'],function(){
     form = layui.form;
     $ = layui.jquery;
     var layer = parent.layer === undefined ? layui.layer : top.layer,
@@ -15,7 +15,7 @@ layui.use(['form','layer','upload','laydate',"address"],function(){
     //上传头像
     upload.render({
         elem: '.userFaceBtn',
-        url: '../../json/userface.json',
+        url: 'public/json/userface.json',
         method : "get",  //此处是为了演示之用，实际使用中请将此删除，默认用post方式提交
         done: function(res, index, upload){
             var num = parseInt(4*Math.random());  //生成0-4的随机数，随机显示一个头像信息
@@ -76,7 +76,7 @@ layui.use(['form','layer','upload','laydate',"address"],function(){
             layer.msg("提交成功！");
         },2000);
         return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
-    })
+    });
 
     //修改密码
     form.on("submit(changePwd)",function(data){
@@ -87,5 +87,5 @@ layui.use(['form','layer','upload','laydate',"address"],function(){
             $(".pwd").val('');
         },2000);
         return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
-    })
-})
+    });
+});
